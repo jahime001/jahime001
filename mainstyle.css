@@ -1,16 +1,23 @@
 *{
     font-family: 'Secular One', sans-serif;
 }
-
+.container{
+    height: 100vh;
+    width: 100%;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
 
 .sec1{
     background-color: #1A2238;
-    height: 600px;
+    height: 100vh;
     color: bisque;
     top: 0;
     left: 0;
     width: 100%;
     position: absolute;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
 }
 
 a {
@@ -43,7 +50,7 @@ a:hover{
     margin-right: 100px;
     border-radius: 50%;
     float: right;
-    position: relative;
+    position: absolute;
     bottom: 225px;
     right: 100px;
     
@@ -55,21 +62,50 @@ a:hover{
 
 .sec2 {
     background-color: antiquewhite;
-    height: 600px;
+    height: 100vh;
     color: #1A2238;
     top: 35rem;
     left: 0;
     width: 100%;
     position: absolute;
-    
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
 }
+
 
 #abt {
     text-align: center;
+    margin-top: 100px;
+    font-size: 4rem;
     
+}
+
+.container2{
+    display: inline-block;
 }
 
 
 #me{
     float: right;
+    width: 45%;
+    margin-right: 70px;
+}
+
+
+.bulb {
+    width: 400px;
+    float: left;
+    margin-top: 37px;
+    margin-left: 170px;
+    border-right: 5px solid #F4DB7D;
+}
+
+.sec3 {
+    background-color: rgb(252, 143, 0);
+    height: 100vh;
+    color: #1A2238;
+    width: 100%;
+    position: relative;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
 }
